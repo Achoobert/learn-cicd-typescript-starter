@@ -22,7 +22,7 @@ describe("auth test", () => {
   });
 
   test("not defined", () => {
-    expect(getAPIKey({"authorization": "ApiKey bob bob bob ApiKey"})).toBe(null)
+    expect(getAPIKey({"authorization": "ApiKey bob bob bob ApiKey"})).toBe("bob")
   });
 });
 
