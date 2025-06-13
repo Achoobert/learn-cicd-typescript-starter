@@ -21,6 +21,9 @@ describe("auth test", () => {
     expect(getAPIKey({})).toBe(null)
   });
 
+  test("not defined", () => {
+    expect(getAPIKey({"authorization": "ApiKey bob bob bob ApiKey"})).toBe(null)
+  });
 });
 
 
